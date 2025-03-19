@@ -1,0 +1,6 @@
+min_freq: 2
+specials:
+  unk: <unk>
+lower: False
+unicode_normalize: False
+kind: word

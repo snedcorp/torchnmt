@@ -1,0 +1,4 @@
+defaults:
+  - rnn_base
+
+kind: sutskever

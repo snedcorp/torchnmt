@@ -1,0 +1,15 @@
+**/__pycache__
+.DS_Store
+.ipynb_checkpoints
+.ruff_cache
+.mypy_cache
+.pytest_cache
+.venv*
+/outputs
+/data
+/experiments
+/*.egg-info
+/notebooks_old
+notes.txt
+.idea
+.env

@@ -1,0 +1,6 @@
+eval_:
+  batch_size: 1024
+  sample_size: 32
+  beam:
+    beam_width: 2
+    n_best: 5

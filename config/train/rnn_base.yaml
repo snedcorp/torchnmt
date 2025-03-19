@@ -1,0 +1,8 @@
+defaults:
+  - train_base
+  - _self_
+
+grad_clip: 1
+#teacher_forcing_policy:
+#  start_rate: 0.8
+#  decay_rate: 0.7

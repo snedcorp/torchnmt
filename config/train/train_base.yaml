@@ -1,0 +1,9 @@
+checkpoint_dir: checkpoints
+n_epochs: 1
+batch_size: 64
+sample_size: 32
+report_per_epoch: 6
+sample_epoch_freq: 1
+lr: 3.0e-4
+save_policy:
+  freq: 10

@@ -1,0 +1,10 @@
+defaults:
+  - model_base
+
+d_model: 256
+n_heads: 8
+d_ff: 512
+sine_pos: False
+pre_norm: True
+naive: False
+kind: transformer

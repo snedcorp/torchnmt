@@ -1,0 +1,49 @@
+[project]
+name = "torchnmt"
+version = "0.1"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["torchnmt"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+include = ["torchnmt/**/*.py"]
+
+[tool.ruff.lint]
+select = [
+    "E4",  # pycodestyle
+    "E7",
+    "E9",
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "T10", # flake8-debugger
+    "RUF", # ruff-specific
+    "UP"   # pyupgrade
+]
+fixable = ["F401", "I"]
+ignore = [
+    "UP007" # prefer Optional & Union to |
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+extra-standard-library = ["typing_extensions"]
+order-by-type = true
+lines-after-imports = 2
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+files = ["torchnmt/**/*.py"]
+plugins = ["pydantic.mypy"]

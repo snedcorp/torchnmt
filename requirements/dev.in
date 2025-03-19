@@ -1,0 +1,8 @@
+-c base.txt
+ruff
+pytest
+mypy
+types-requests
+types-PyYAML
+types-regex
+types-tqdm

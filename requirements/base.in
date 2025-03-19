@@ -1,0 +1,16 @@
+torch
+matplotlib
+scikit-learn
+hydra-core
+pydantic
+bertviz
+matplotlib
+requests
+torchinfo
+regex
+tqdm
+PyYAML
+numpy==1.26.4
+ipython<9.0.0
+rich[jupyter]
+iso639-lang

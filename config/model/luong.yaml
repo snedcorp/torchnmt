@@ -1,0 +1,7 @@
+defaults:
+  - bahdanau
+  - _self_
+
+att_score_method: dot
+input_feeding: False
+kind: luong

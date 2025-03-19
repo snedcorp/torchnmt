@@ -1,0 +1,19 @@
+defaults:
+  - load
+  - _self_
+  - tokenizer: bpe
+
+src_lang: spa
+tgt_lang: eng
+sources:
+  - tatoeba
+tokenizer:
+  specials:
+    pad: <pad>
+    start: <sos>
+    end: <eos>
+  regex: '''(?i:[sdmt]|ll|ve|re)|[^\r\n\p{L}\p{N}]?+\p{L}+|\p{N}{1,3}| ?[^\s\p{L}\p{N}]++[\r\n]*|\s*[\r\n]|\s+(?!\S)|\s+' # GPT-4 pattern
+name: tatoeba-spa-eng
+save: True
+seed: 42
+kind: build

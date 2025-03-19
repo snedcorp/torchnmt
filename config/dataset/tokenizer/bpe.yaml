@@ -1,0 +1,4 @@
+src_vocab_size: 5000
+tgt_vocab_size: 5000
+verbose: false
+kind: bpe

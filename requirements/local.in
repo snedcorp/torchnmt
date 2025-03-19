@@ -1,0 +1,5 @@
+-c base.txt
+-c dev.txt
+notebook
+pre-commit
+pip-tools

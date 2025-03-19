@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - dataset: build
+  - model: sutskever
+  - eval
+  - optional train: ${model}
+
+device: cpu
+experiment: tatoeba-spa-eng
+name: base

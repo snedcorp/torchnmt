@@ -1,0 +1,6 @@
+defaults:
+  - sutskever
+  - _self_
+
+use_context: True
+kind: bahdanau
